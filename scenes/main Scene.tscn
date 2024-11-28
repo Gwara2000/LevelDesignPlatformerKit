@@ -304,49 +304,65 @@ object_to_move = NodePath("../butt button3")
 is_on_from_start = false
 ping_pong = true
 
+[node name="moving_object_path8" parent="World/south" node_paths=PackedStringArray("object_to_move") instance=ExtResource("11_gwro4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1352, 0, 0.343679)
+curve = SubResource("Curve3D_xvciy")
+object_to_move = NodePath("../butt button4")
+is_on_from_start = false
+ping_pong = true
+
 [node name="butt button" type="Node3D" parent="World/south"]
 
-[node name="block-grass-large7" parent="World/south/butt button" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 6.80884, -13.0722, 15.9346)
+[node name="block-grass-large3" parent="World/south/butt button" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.2, 0, -0.681998, 0, 0.731354, 15.6226, -13.0383, 7.71564)
 
-[node name="block-grass-large12" parent="World/south/butt button" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.746697, 0, 1.49165, 0, 3.06294, 0, -0.696306, 0, 1.5996, 9.90145, -10.4868, 10.577)
+[node name="block-grass-large11" parent="World/south/butt button" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 1.49153, 0, 3, 0, -0.681998, 0, 1.59947, 10.4125, -7.43139, 4.89165)
 
 [node name="block-grass-large2" parent="World/south/butt button" instance=ExtResource("7_v0ivv")]
 transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 3.68868, -10.3608, 13.4533)
 
 [node name="butt button2" type="Node3D" parent="World/south"]
 
-[node name="block-grass-large3" parent="World/south/butt button2" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 0.681998, 0, 1.2, 0, -0.681998, 0, 0.731354, 15.6226, -13.0383, 7.71564)
+[node name="block-grass-large12" parent="World/south/butt button2" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.746697, 0, 1.49165, 0, 3.06294, 0, -0.696306, 0, 1.5996, 9.90145, -10.4868, 10.577)
 
-[node name="block-grass-large13" parent="World/south/butt button2" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 1.49153, 0, 3, 0, -0.681998, 0, 1.59947, -0.0345662, -4.55938, 10.1018)
+[node name="block-grass-large7" parent="World/south/butt button2" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 6.80884, -13.0722, 15.9346)
 
 [node name="block-grass-large8" parent="World/south/butt button2" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 10.7807, -4.43654, -2.29871)
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, -4.02168, -4.43654, 11.5047)
+
+[node name="checkpoint" parent="World/south/butt button2" instance=ExtResource("22_fgg8t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.176943, 0.5, 0.0186972)
 
 [node name="butt button3" type="Node3D" parent="World/south"]
 
-[node name="block-grass-large11" parent="World/south/butt button3" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 1.49153, 0, 3, 0, -0.681998, 0, 1.59947, 10.4125, -7.43139, 4.89165)
+[node name="block-grass-large12" parent="World/south/butt button3" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 14.4018, -10.4227, 3.3313)
 
-[node name="block-grass-large9" parent="World/south/butt button3" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 5.77664, -7.34643, 7.18219)
+[node name="block-grass-large13" parent="World/south/butt button3" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 1.49153, 0, 3, 0, -0.681998, 0, 1.59947, -0.0345662, -4.55938, 10.1018)
 
-[node name="block-grass-large10" parent="World/south/butt button3" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 9.00097, -1.49285, -6.08062)
+[node name="butt button4" type="Node3D" parent="World/south"]
+
+[node name="block-grass-large10" parent="World/south/butt button4" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, -7.00594, -1.49285, 8.84604)
+
+[node name="block-grass-large9" parent="World/south/butt button4" instance=ExtResource("7_v0ivv")]
+transform = Transform3D(0.731354, 0, 0.681998, 0, 1.1, 0, -0.681998, 0, 0.731354, 6.91725, -7.34643, 6.11855)
 
 [node name="button6" parent="World/south" node_paths=PackedStringArray("target") instance=ExtResource("17_ixmx8")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 15.7028, -10.3893, 3.94992)
+transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 1.4627, -10.3893, 15.8988)
 target = NodePath("../moving_object_path6")
 
 [node name="button7" parent="World/south" node_paths=PackedStringArray("target") instance=ExtResource("17_ixmx8")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 0.316687, -7.49357, 14.0926)
 target = NodePath("../moving_object_path7")
 
-[node name="button8" parent="World/south" instance=ExtResource("17_ixmx8")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, -3.36453, -4.56096, 11.9779)
+[node name="button8" parent="World/south" node_paths=PackedStringArray("target") instance=ExtResource("17_ixmx8")]
+transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 11.5024, -7.49414, 3.55266)
+target = NodePath("../moving_object_path8")
 
 [node name="button5" parent="World/south" node_paths=PackedStringArray("target") instance=ExtResource("17_ixmx8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4097, -13.056, 15.3035)
