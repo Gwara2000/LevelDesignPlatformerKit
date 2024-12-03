@@ -39,4 +39,11 @@ shape = SubResource("BoxShape3D_0fkk3")
 wait_time = 1.5
 one_shot = true
 
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.255354, 0)
+light_color = Color(0.184314, 1, 0.898039, 1)
+light_energy = 3.379
+light_indirect_energy = 3.251
+light_volumetric_fog_energy = 0.0
+
 [connection signal="area_entered" from="ButtonArea3D" to="." method="_on_button_area_3d_area_entered"]
