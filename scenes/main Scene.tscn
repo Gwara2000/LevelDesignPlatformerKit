@@ -50,7 +50,7 @@ dof_blur_far_distance = 0.01
 
 [sub_resource type="Curve3D" id="Curve3D_nm3c8"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.24, 2.71, -4.369, 0, 0, 0, 0, 0, 0, -3.24, 2.71, 16.639),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.24, 2.71, -1.434, 0, 0, 0, 0, 0, 0, -3.24, 2.71, 16.639),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -203,7 +203,7 @@ transform = Transform3D(2.60322, 0, 0, 0, 3.38616, 0, 0, 0, 2.99241, 3.74543, -0
 transform = Transform3D(8.227, 0, 0, 0, 3.36883, 0, 0, 0, 2.801, -1.58895, -0.134389, -19.0333)
 
 [node name="block-grass-large3" parent="World" instance=ExtResource("7_v0ivv")]
-transform = Transform3D(5.239, 0, 0, 0, 5.239, 0, 0, 0, 3.327, -0.239569, -2.21118, -56.3365)
+transform = Transform3D(5.239, 0, 0, 0, 5.239, 0, 0, 0, 3.327, -0.239569, 1.68971, -56.3365)
 
 [node name="block-grass-overhang-large-slope-steep4" parent="World" instance=ExtResource("15_0f1lg")]
 transform = Transform3D(-1.1379e-07, 0, 2.99241, 0, 3.38616, 0, -2.60322, 0, -1.30802e-07, -25.8646, 2.49782, -3.61452)
@@ -433,10 +433,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07535, 3.43014, -29.7383)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.07535, 4.36757, -29.7383)
 
 [node name="spike-block-wide8" parent="World/East" instance=ExtResource("20_8o3h7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.219685, 3.43014, -51.8067)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.219685, 6.81505, -51.8067)
 
 [node name="spike-block-wide9" parent="World/East" instance=ExtResource("20_8o3h7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.219685, 4.36757, -51.7483)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.219685, 7.75248, -51.7483)
 
 [node name="spike-block-wide3" parent="World/East" instance=ExtResource("20_8o3h7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0468011, 3.43014, -33.495)
@@ -663,7 +663,7 @@ is_on_from_start = false
 ping_pong = true
 
 [node name="button6" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("23_rvmtc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48568, 3, -56.2007)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.48568, 6.91367, -56.2007)
 target = NodePath("../door3")
 
 [node name="button3" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("23_rvmtc")]
@@ -959,10 +959,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0986419, 3.34931, -43.3488)
 metadata/Script = false
 
 [node name="trampoline3" parent="." instance=ExtResource("34_vngvb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0986419, 3.34931, -48.3921)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0986419, 4.77178, -48.3921)
 
 [node name="trampoline4" parent="." instance=ExtResource("34_vngvb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56256, 3.34931, -52.1509)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56256, 6.27092, -52.1509)
 
 [node name="FogVolume" type="FogVolume" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.2715, -1.9053, -5.26775)
