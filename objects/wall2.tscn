@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://fngx0ou3bdw8"]
+
+[ext_resource type="PackedScene" uid="uid://2briludp3y6q" path="res://models/prototyping/models/wall.glb" id="1_evnda"]
+[ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="2_5kdpj"]
+[ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="3_br8lt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxvg1"]
+albedo_color = Color(0.837659, 0.498837, 0.188279, 1)
+albedo_texture = ExtResource("2_5kdpj")
+albedo_texture_force_srgb = true
+normal_scale = -14.35
+normal_texture = ExtResource("2_5kdpj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nj181"]
+albedo_texture = ExtResource("3_br8lt")
+metallic_specular = 0.0
+uv1_offset = Vector3(1.24, 0, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eauqk"]
+size = Vector3(0.25, 1, 1)
+
+[node name="wall" type="Node3D"]
+
+[node name="wall2" parent="." instance=ExtResource("1_evnda")]
+
+[node name="wall" parent="wall2" index="0"]
+material_override = SubResource("StandardMaterial3D_wxvg1")
+surface_material_override/0 = SubResource("StandardMaterial3D_nj181")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_eauqk")
+
+[editable path="wall2"]
